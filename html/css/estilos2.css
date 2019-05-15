@@ -1,0 +1,187 @@
+@font-face
+{
+	font-family: 'dancingscript-regular';
+	src: url('dancingscript-regular.otf') ;
+}
+
+*{margin:0;}
+
+article
+{
+	float: left;
+	width: 33.33%;
+}
+
+body
+{
+	margin:0;
+	background-color: black;
+	color:white;
+	font-family: dancingscript-regular, arial, helvetica;
+	font-size: 1em;
+}
+
+#menu
+{
+	max-width: 900px;
+	background-color: #5b7989;
+	margin:0 auto;
+	border-radius: 10px 10px 0px 0px;
+	text-align: right;
+	}
+
+#menu ul
+{
+	padding: 0;
+}
+
+#menu ul li
+{
+	display: inline-block;
+	list-style: none;
+	padding:10px;
+	margin:10px;
+}
+
+
+#menu header
+{
+	float: left;
+	font-size: 2em;
+	text-shadow: 2px 2px #02010a;
+	padding:10px;
+}
+
+#menu ul li a
+{
+	color:white;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px){
+
+	nav{
+		width: 100%;
+	}
+	header{
+		text-align: center;
+	}
+	#menu
+{
+	text-align: center;
+}
+
+
+}
+
+
+section
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+article
+{
+	background-color: #d5c75f;
+}
+
+img[src$=".jpg"]
+
+{
+	width: 85%;
+	height: 160px;
+	margin: auto;
+	display: block;
+	padding: 20px 0;
+	-webkit-filter:drop-shadow(2px 2px 10px black);
+	filter: drop-shadow(2px 2px 10px black);
+}
+
+
+.foto img
+{
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	filter: drop-shadow(2px 2px 10px black) grayscale(100%);
+}
+.foto1 img
+{
+	-webkit-filter:blur(3px);
+	-moz-filter:blur(3px);
+	filter: drop-shadow(2px 2px 10px black) blur(3px);
+}
+.foto2 img
+{
+	-webkit-filter:sepia(90%);
+	-moz-filter:sepia(90%);
+	filter: drop-shadow(2px 2px 10px black) sepia(90%);
+}
+
+
+.fila3 article
+{
+	background-color: #C6d5c5;
+	width: 25%;
+	height: 180px;
+	color: black;
+	text-align: center;
+	padding-top: 20px;
+}
+
+article.col1 
+{
+	border-radius: 0px 0px 0px 10px;
+}
+article.col4
+{
+	border-radius: 0px 0px 10px 0px;
+}
+
+
+@media screen and (max-width:480px){
+	nav{
+		width: 100%;
+	}
+	section{
+		width: 100%;
+	}
+	.fila1 article{
+		width: 100%;
+		border:1px;
+	}
+	.fila2 article{
+		width: 100%;
+		border:1px;
+	}
+	.fila3 article{
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+	}
+	article.col1{
+		border-radius: 0;
+	}
+	article.col4{
+		border-radius: 0px 0px 10px 10px;
+	}
+
+}
+
+
+@media screen and (max-width: 480px){
+	img{
+		padding: 20px 0;
+	}
+}
+
+img[src$=".png"]
+
+{
+	width: 15px;
+	height: 15px;
+}
+
+
+
